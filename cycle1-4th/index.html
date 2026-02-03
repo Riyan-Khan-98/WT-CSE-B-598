@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Landing Page</title>
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-orange-400 text-white text-center p-5">
+    <h1 class="text-2xl font-bold">Welcome to Our Service</h1>
+    <p id="deviceType" class="mt-2"></p>
+  </header>
+
+  <!-- Main -->
+  <main class="p-5">
+
+    <!-- Hero Section -->
+    <section id="hero" class="text-center lg:text-left mb-5">
+      <h2 id="heroTitle" class="text-2xl lg:text-4xl font-semibold mb-2">
+        Discover Our Solutions
+      </h2>
+      <p id="heroDescription" class="text-lg lg:text-xl text-gray-700">
+        We provide top-notch solutions tailored to your needs.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section id="feature" class="mb-5">
+      <h2 class="text-xl font-semibold mb-3">Features</h2>
+
+      <div id="featureList"
+        class="flex flex-col md:flex-row flex-wrap gap-3">
+        <!-- Features inserted by JS -->
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+      <p class="mb-3">Get in touch with us for more information.</p>
+
+      <form id="contactForm"
+        class="flex flex-col bg-white p-5 border rounded">
+
+        <label class="mt-2">Name:</label>
+        <input type="text" name="name" required
+          class="mt-1 p-2 border rounded">
+
+        <label class="mt-2">Email:</label>
+        <input type="email" name="email" required
+          class="mt-1 p-2 border rounded">
+
+        <label class="mt-2">Message:</label>
+        <textarea name="message" rows="4" required
+          class="mt-1 p-2 border rounded"></textarea>
+
+        <button type="submit"
+          class="mt-4 px-5 py-2 bg-orange-400 text-white rounded hover:bg-orange-600">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-3">
+    <p>© 2024 Our Service</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
